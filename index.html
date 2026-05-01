@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8ddd1" />
+    <meta name="description" content="A private at-home spa invitation ending with dinner at Din Tai Fung." />
+    <title>A Spa Day, Curated for You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="ambience" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+    <div class="aurora aurora-three" aria-hidden="true"></div>
+
+    <main>
+      <section class="hero" id="top">
+        <nav class="nav glass reveal">
+          <a href="#top" class="brand" aria-label="Back to top">Private Spa</a>
+          <div class="nav-links">
+            <a href="#ritual">Treatment</a>
+            <a href="#itinerary">Itinerary</a>
+            <a href="#dinner">Dinner</a>
+          </div>
+        </nav>
+
+        <div class="envelope reveal" id="envelope" role="button" tabindex="0" aria-label="Open invitation">
+          <div class="envelope-back"></div>
+          <div class="letter glass">
+            <p class="eyebrow">For one extremely deserving boyfriend</p>
+            <h1>A Spa Day,<br />Curated for You</h1>
+            <p class="subtitle">
+              You are invited to an at-home spa treatment: soft hands, calmer skin, untangled thoughts, a full-body L’Occitane massage, and a triumphant pilgrimage to Din Tai Fung.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary magnetic" href="#ritual">Reveal the ritual</a>
+              <button class="btn ghost magnetic" id="acceptHero" type="button">Accept invitation</button>
+            </div>
+          </div>
+          <div class="flap"></div>
+          <div class="wax-seal" aria-hidden="true">♥</div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span></span>
+          <p>Scroll</p>
+        </div>
+      </section>
+
+      <section class="section" id="ritual">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The treatment menu</p>
+          <h2>Six acts of domestic decadence</h2>
+          <p>Each step is designed to make the ordinary world politely leave the room.</p>
+        </div>
+
+        <div class="ritual-grid">
+          <article class="ritual-card glass reveal tilt" data-step="01">
+            <div class="icon">✦</div>
+            <h3>Nail Buffing</h3>
+            <p>A gentle shine ritual for hands that deserve reverence, not neglect.</p>
+          </article>
+          <article class="ritual-card glass reveal tilt" data-step="02">
+            <div class="icon">✂</div>
+            <h3>Cuticle Trimming</h3>
+            <p>Careful tidying, delicate diplomacy, and the end of tiny nail-bed tyranny.</p>
+          </article>
+          <article class="ritual-card glass reveal tilt featured" data-step="03">
+            <div class="icon">❧</div>
+            <h3>Full Body Massage</h3>
+            <p>Warm hands, slow pressure, candlelight, and L’Occitane products doing their fragrant sorcery.</p>
+          </article>
+          <article class="ritual-card glass reveal tilt" data-step="04">
+            <div class="icon">☁</div>
+            <h3>Soothing Face Mask</h3>
+            <p>A soft reset for the face; a temporary ceasefire with stress, screens, and civilisation.</p>
+          </article>
+          <article class="ritual-card glass reveal tilt" data-step="05">
+            <div class="icon">〰</div>
+            <h3>Scalp Massage</h3>
+            <p>Slow circles at the temples and crown until every errant thought becomes silk.</p>
+          </article>
+          <article class="ritual-card glass reveal tilt dinner-card" data-step="06">
+            <div class="icon">🥟</div>
+            <h3>Dinner at Din Tai Fung</h3>
+            <p>The finale: dumplings, noodles, and the solemn restoration of human happiness.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section itinerary-section" id="itinerary">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The itinerary</p>
+          <h2>From robe to restaurant</h2>
+        </div>
+
+        <div class="timeline glass reveal">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <div class="timeline-item">
+            <span>1</span>
+            <div><h3>Arrival</h3><p>Robe, slippers, candlelight, and a ceremonial beverage.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span>2</span>
+            <div><h3>Hands</h3><p>Buffing, trimming, and a little princely preening.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span>3</span>
+            <div><h3>Massage</h3><p>L’Occitane body care, slow music, and shoulders unknotted with zeal.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span>4</span>
+            <div><h3>Face + Scalp</h3><p>A mask while your scalp gets the kind of attention usually reserved for saints.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span>5</span>
+            <div><h3>Dinner</h3><p>Din Tai Fung. Dumplings as destiny intended.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sensory-section">
+        <div class="sensory-card glass reveal">
+          <div>
+            <p class="eyebrow">The atmosphere</p>
+            <h2>Low light. Warm oil. No obligations.</h2>
+          </div>
+          <div class="toggles" aria-label="Spa atmosphere toggles">
+            <button class="mood active" data-mood="candles" type="button">Candles</button>
+            <button class="mood" data-mood="rain" type="button">Rain</button>
+            <button class="mood" data-mood="silk" type="button">Silk</button>
+          </div>
+          <p id="moodText">Candle-glow mode: honeyed light, soft shadows, and the moral necessity of relaxation.</p>
+        </div>
+      </section>
+
+      <section class="finale" id="dinner">
+        <div class="finale-card glass reveal">
+          <p class="eyebrow">Final question</p>
+          <h2>Will you accept this absurdly tender invitation?</h2>
+          <p>Bring yourself. Everything else – oils, masks, massage, cuticle diplomacy, and dumpling logistics – has been arranged.</p>
+          <div class="hero-actions">
+            <button class="btn primary magnetic" id="acceptFinal" type="button">Yes, obviously</button>
+            <button class="btn ghost magnetic" id="teaseNo" type="button">Pretend to decline</button>
+          </div>
+          <p class="tiny-note">Declining may cause theatrical sighing and an immediate appeal.</p>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="acceptDialog" class="accept-dialog glass">
+      <button class="close" id="closeDialog" aria-label="Close">×</button>
+      <p class="eyebrow">Confirmed</p>
+      <h2>The spa kingdom rejoices.</h2>
+      <p id="acceptMessage">Your appointment has been emotionally booked. Please arrive in maximum softness.</p>
+      <button class="btn primary" id="confettiAgain" type="button">Celebrate again ✦</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
